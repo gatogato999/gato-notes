@@ -1,0 +1,53 @@
+{
+  "name": "gato-notes",
+  "version": "1.0.0",
+  "description": "a personal notes with login",
+  "keywords": [
+    "notes",
+    "fullstack",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/gatogato999/gato-notes#readme",
+  "bugs": {
+    "url": "https://github.com/gatogato999/gato-notes/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatogato999/gato-notes.git"
+  },
+  "license": "MIT",
+  "author": "gatogato999",
+  "type": "commonjs",
+  "main": "index.js",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "./node_modules"
+    ]
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node ./server/server.js",
+    "dev": "nodemon ./server/server.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "better-sqlite3": "^12.2.0",
+    "body-parser": "^2.2.0",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express-rate-limit": "^8.0.1",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.33.0",
+    "jest": "^30.0.5",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4"
+  }
+}
